@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+    <AssemblyVersion>1.0.7257.4</AssemblyVersion>
+    <FileVersion>1.0.7257.4</FileVersion>
+    <Version>1.0.7257.3</Version>
+    <Authors>Dogus Technology DevOps Team</Authors>
+    <Company>Dogus Technology</Company>
+    <Product>DSM Services</Product>
+    <Description>DSM Service Agent Engine (Base Windows Service)</Description>
+    <PackageReleaseNotes>-&gt; Added appsettings.json support.</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/DogusTeknoloji/DSM-UI-Solution</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/DogusTeknoloji/DSM-UI-Solution/master/public/favicon.jpg</PackageIconUrl>
+    <RepositoryUrl>https://github.com/DogusTeknoloji/dsm-agents</RepositoryUrl>
+    <RepositoryType>Library</RepositoryType>
+    <PackageTags>Open APMM, Service Monitoring , Performance Monitoring</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DSM.Core" Version="1.0.7257" />
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
