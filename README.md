@@ -21,4 +21,4 @@ Follow the [contributing](CONTRIBUTING.md) file.
 
 DSM is **licensed** under the **[GNU/GPL v3 License]**.
 
-[GNU/GPL v3 License]: https://github.com/DogusTeknoloji/DSM.AGENTS.MonitorService/blob/master/LICENSE
+[GNU/GPL v3 License]: https://github.com/DogusTeknoloji/DSM.Agents/blob/master/LICENSE
