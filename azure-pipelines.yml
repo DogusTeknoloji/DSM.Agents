@@ -3,9 +3,6 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
-  
-variables:
-  -group: nuget-group
 
 name: $(Year:yy).$(DayOfYear).$(Rev:rr)
 steps:
@@ -21,7 +18,7 @@ steps:
     versioningScheme: 'byBuildNumber'
     verbosityPack: 'Diagnostic'
 
-- script: dotnet nuget push $(Build.ArtifactStagingDirectory)/*.nupkg -k $nuget-apikey -s $nuget-url
+- script: dotnet nuget push $(Build.ArtifactStagingDirectory)/*.nupkg -k $(nuget-apikey) -s $(nuget-url)
   displayName: 'dotnet nuget push $(Build.ArtifactStagingDirectory)/*.nupkg'
 - task: DotNetCoreCLI@2
   inputs:
