@@ -21,7 +21,7 @@ steps:
     versioningScheme: 'byBuildNumber'
     verbosityPack: 'Diagnostic'
 
-- script: dotnet nuget push $(Build.ArtifactStagingDirectory)/*.nupkg -k $(nuget-apikey) -s $(nuget-url)
+- script: dotnet nuget push $(Build.ArtifactStagingDirectory)/*.nupkg -k $nuget-apikey -s $nuget-url
   displayName: 'dotnet nuget push $(Build.ArtifactStagingDirectory)/*.nupkg'
 - task: DotNetCoreCLI@2
   inputs:
