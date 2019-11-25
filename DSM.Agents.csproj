@@ -28,7 +28,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DSM.Core" Version="19.328.2" />
+    <PackageReference Include="DSM.Core" Version="19.329.2" />
     <PackageReference Include="Microsoft.Windows.Compatibility" Version="3.0.0" />
   </ItemGroup>
 
